@@ -1,7 +1,7 @@
 import { AdminLayout } from "@/layout";
 import React, { Fragment, useState } from "react";
 
-const manage = () => {
+const Manage = () => {
   const [userID, setUserID] = useState("");
 
   const [userPersmissions, setUserPermissions] = useState([]);
@@ -55,4 +55,4 @@ const manage = () => {
   );
 };
 
-export default manage;
+export default Manage;
