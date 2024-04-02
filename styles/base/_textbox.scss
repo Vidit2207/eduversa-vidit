@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.textbox {
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid grey;
+  text-transform: capitalize;
+  width: clamp(200px, 70%, 500px);
+
+  &::placeholder {
+    text-transform: capitalize;
+  }
+}
+
+.btn {
+  border-radius: 0px 5px 5px 0px;
+  padding: 10px;
+  background-color: var(--blue-1);
+}

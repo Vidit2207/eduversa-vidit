@@ -116,7 +116,7 @@ const ManageApplicants = () => {
       <AdminLayout>
         <div className="admin-manage-applicants">
           <div className="manage-applicant-container">
-            <h1>Manage Applicant</h1>
+            <h1>Manage Students</h1>
             <CollegeDropdowns
               selectedCourse={selectedCourse}
               selectedStream={selectedStream}

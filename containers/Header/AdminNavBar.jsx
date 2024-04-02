@@ -72,6 +72,11 @@ function AdminNavbar() {
       className: "nav-item",
       src: "/admin/update/students",
     },
+    {
+      label: "Manage Permissions",
+      className: "nav-item",
+      src: "/admin/permissions/manage",
+    },
   ];
 
   return (
