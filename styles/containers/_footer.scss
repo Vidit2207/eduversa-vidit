@@ -1,0 +1,145 @@
+.footer {
+  position: relative;
+  background: linear-gradient(
+    45deg,
+    var(--light-black-4),
+    var(--light-black-2),
+    var(--light-black-4)
+  );
+  padding: 1rem 1.2px;
+  @include flex-container(column, nowrap, center, center);
+  color: var(--white);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  @media (max-width: $breakpoint-desktop-wide) {
+  }
+  @media (max-width: $breakpoint-desktop) {
+  }
+  @media (max-width: $breakpoint-large-tablet) {
+  }
+  @media (max-width: $breakpoint-tablet) {
+  }
+  @media (max-width: $breakpoint-phone) {
+  }
+  .copyright {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-oswald);
+    font-size: var(--font-12);
+    letter-spacing: 2px;
+    margin: 0 0 0.5% 0;
+    @media (max-width: $breakpoint-desktop-wide) {
+    }
+    @media (max-width: $breakpoint-desktop) {
+    }
+    @media (max-width: $breakpoint-large-tablet) {
+    }
+    @media (max-width: $breakpoint-tablet) {
+      font-size: var(--font-11);
+    }
+    @media (max-width: $breakpoint-phone) {
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: transparent;
+      box-shadow: 0 0 5px rgba(26, 188, 156, 0);
+      transition: box-shadow 0.5s ease, background-color 0.5s ease;
+    }
+
+    &::before {
+      left: 0;
+      top: 0;
+    }
+
+    &::after {
+      right: 0;
+      bottom: 0;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: var(--green-3);
+      box-shadow: 0 0 5px rgba(26, 188, 156, 1);
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include flex-container(row, nowrap, center, center);
+    gap: 20px;
+    @media (max-width: $breakpoint-desktop-wide) {
+    }
+    @media (max-width: $breakpoint-desktop) {
+    }
+    @media (max-width: $breakpoint-large-tablet) {
+    }
+    @media (max-width: $breakpoint-tablet) {
+    }
+    @media (max-width: $breakpoint-phone) {
+      gap: 10px;
+    }
+    .nav-links {
+      position: relative;
+
+      a {
+        transition: color 0.3s ease, border-radius 0.3s ease;
+        font-family: var(--font-roboto);
+        font-size: var(--font-12);
+        letter-spacing: 1px;
+        @media (max-width: $breakpoint-desktop-wide) {
+        }
+        @media (max-width: $breakpoint-desktop) {
+        }
+        @media (max-width: $breakpoint-large-tablet) {
+        }
+        @media (max-width: $breakpoint-tablet) {
+          font-size: var(--font-11);
+        }
+        @media (max-width: $breakpoint-phone) {
+        }
+        &:hover {
+          color: var(--green-3);
+        }
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0%;
+          height: 2px;
+          background-color: var(--green-3);
+          transition: width 0.5s ease;
+        }
+
+        &::before {
+          left: 0;
+          top: 0;
+        }
+
+        &::after {
+          right: 0;
+          bottom: 0;
+        }
+
+        &:hover::before,
+        &:hover::after {
+          width: 100%;
+          animation: lineAnimation 1s forwards;
+        }
+      }
+    }
+  }
+
+  @keyframes lineAnimation {
+    to {
+      transform: scaleX(0);
+    }
+  }
+}

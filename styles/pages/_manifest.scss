@@ -1,0 +1,14 @@
+@import "homepage";
+@import "login";
+@import "register";
+@import "aboutLanding";
+@import "contactLanding";
+@import "forgetPass";
+@import "forgetUser";
+
+// applicant
+@import "applicant/update";
+@import "applicant/dashboard";
+
+// admin
+@import "admin/manageApplicants";
